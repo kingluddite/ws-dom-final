@@ -1,0 +1,22 @@
+<?php
+
+
+/* add css */
+function theme_styles() {
+    wp_enqueue_style( 'custom_css', get_template_directory_uri() . '/css/style.css' );
+    wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'theme_styles' );
+
+/* add JavaScript */
+function theme_js() {
+    wp_enqueue_script( 'global_js', get_template_directory_uri() . '/js/global.js', '','', true );
+    // add condition to only pull home.js on home page
+    wp_enqueue_script( 'home_js', get_template_directory_uri() . '/js/home.js', '', '', true );
+    $wsd_home = array( 'template_url' => get_bloginfo('template_url') );
+   wp_localize_script( 'home_js', 'wsd_home', $wsd_home );
+}
+add_action( 'wp_enqueue_scripts', 'theme_js' );
+
+
+?>

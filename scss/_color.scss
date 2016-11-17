@@ -1,0 +1,101 @@
+/* color */
+body {
+    color           : $texas-rose;
+    background-color: $tuna;
+}
+
+a:link {
+    color           : $gun-powder;
+    background-color: $porsche;
+}
+
+a:visited {
+    color           : #345;
+    background-color: $porsche;
+}
+
+a:hover {
+    color           : $dolphin;
+    background-color: $texas-rose;
+}
+
+a:active {
+    color           : $storm-gray;
+    background-color: $flax;
+}
+
+header {
+    color           : $flax;
+    background-color: $tuna;
+    border-color    : $dolphin;
+}
+
+#navigation {
+    color           : #455;
+    background-color: #789;
+    border-color    : $dolphin;
+}
+
+#content {
+    color           : #223;
+    background-color: #edc;
+    border-color    : $dolphin;
+}
+
+#navigation ul {
+    border-color: #99a;
+}
+
+#navigation a:link,
+#navigation a:visited {
+    color           : #eef;
+    background-color: transparent;
+    border-color    : #99a;
+}
+
+#navigation a:hover {
+    color           : $gun-powder;
+    background-color: $porsche;
+}
+
+#navigation a:active {
+    color           : $dolphin;
+    background-color: $flax;
+}
+
+#navigation a.here:active,
+#navigation a.here:hover,
+#navigation a.here:link,
+#navigation a.here:visited {
+    color           : #eef;
+    background-color: #799;
+}
+
+#content img {
+    border-color : #ba9;
+    outline-color: #dcb;
+}
+
+#imagegallery a {
+    background-color: transparent;
+}
+
+th {
+    color           : #edc;
+    background-color: #455;
+}
+
+tr td {
+    color           : #223;
+    background-color: $porsche;
+}
+
+tr.odd td {
+    color           : #223;
+    background-color: $flax;
+}
+
+tr.highlight td {
+    color           : #223;
+    background-color: #cba;
+}
