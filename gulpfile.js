@@ -45,6 +45,7 @@ gulp.task('clean:dist', function() {
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch('**/*.php', browserSync.reload);
 });
 
 gulp.task('build', function (callback) {
