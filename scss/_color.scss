@@ -10,7 +10,7 @@ a:link {
 }
 
 a:visited {
-    color           : #345;
+    color           : $pickled-bluewood;
     background-color: $porsche;
 }
 
@@ -31,26 +31,26 @@ header {
 }
 
 #navigation {
-    color           : #455;
-    background-color: #789;
+    color           : $gun-powder;
+    background-color: $slate-gray;
     border-color    : $dolphin;
 }
 
 #content {
-    color           : #223;
-    background-color: #edc;
+    color           : $steel-gray;
+    background-color: $almond;
     border-color    : $dolphin;
 }
 
 #navigation ul {
-    border-color: #99a;
+    border-color: $santas-gray;
 }
 
 #navigation a:link,
 #navigation a:visited {
-    color           : #eef;
+    color           : $titan-white;
     background-color: transparent;
-    border-color    : #99a;
+    border-color    : $santas-gray;
 }
 
 #navigation a:hover {
@@ -67,13 +67,13 @@ header {
 #navigation a.here:hover,
 #navigation a.here:link,
 #navigation a.here:visited {
-    color           : #eef;
-    background-color: #799;
+    color           : $titan-white;
+    background-color: $juniper;
 }
 
 #content img {
-    border-color : #ba9;
-    outline-color: #dcb;
+    border-color : $malta;
+    outline-color: $bone;
 }
 
 #imagegallery a {
@@ -81,21 +81,21 @@ header {
 }
 
 th {
-    color           : #edc;
-    background-color: #455;
+    color           : $almond;
+    background-color: $gun-powder;
 }
 
 tr td {
-    color           : #223;
+    color           : $steel-gray;
     background-color: $porsche;
 }
 
 tr.odd td {
-    color           : #223;
+    color           : $steel-gray;
     background-color: $flax;
 }
 
 tr.highlight td {
-    color           : #223;
-    background-color: #cba;
+    color           : $steel-gray;
+    background-color: $coral-reef;
 }
