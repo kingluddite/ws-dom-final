@@ -25,3 +25,5 @@ This will allow us to watch Sass and use browser-sync to update our browser on t
 
 If you were ready to push your site to the staging or production server, use this command and all your files will be optimized. You just need to make sure your paths are all correct (because they are inside the `build` folder). At some point you will need to push your site to production, so I just wanted to introduce you to a way to use Gulp to streamline this process for you.
 
+
+
