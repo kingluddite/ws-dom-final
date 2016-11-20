@@ -1,0 +1,71 @@
+// -1 (small)
+// 0 (body)
+// 1 (large)
+// 2 (main heading)
+$type-scale: ( -1: 0.75rem, 0: 1rem, 1: 1.333rem, 2: 1.777rem );
+@function type-scale($level) {
+     @return map-get($type-scale, $level);
+}
+
+$base-font-size: 1rem;
+$base-line-height: $base-font-size * 1.25;
+
+$line-heights: ( -1: $base-line-height, 0: $base-line-height, 1: $base-line-height * 2, 2: $base-line-height * 2 );
+
+// Again, we can make a helper function:
+@function line-heights($level) {
+     @return map-get($line-height, $level);
+}
+
+h1 {
+    margin-bottom: $base-line-height;
+}
+
+// .recipe-button {
+//     // ... other styles
+//     height: $base-line-height * 2;
+// }
+
+// Example using 1rem or 0.5rem consistently,
+// regardless of base line height
+/* etc. */
+// .field,
+// .heading-1,
+// .paragraph {
+//     margin-bottom: 1rem;
+// }
+//
+// .field > .label {
+//     display      : block;
+//     margin-bottom: 0.5rem;
+// }
+@mixin type-setting($level: 0) {
+    font-size  : type-scale($level);
+    line-height: line-height($level);
+}
+
+// The main heading
+h1 {
+    @include type-setting(2);
+}
+
+// The smaller top heading
+h2 {
+    @include type-setting(-1);
+}
+
+p {
+    @include type-setting(0);
+}
+
+// .recipe-value {
+//     @include type-setting(1);
+// }
+//
+// .recipe-text {
+//     @include type-setting(-1);
+// }
+//
+// .recipe-button {
+//     @include type-setting(-1);
+// }

@@ -30,7 +30,7 @@ header {
     border-color    : $dolphin;
 }
 
-#navigation {
+nav {
     color           : $gun-powder;
     background-color: $slate-gray;
     border-color    : $dolphin;
@@ -42,31 +42,31 @@ header {
     border-color    : $dolphin;
 }
 
-#navigation ul {
+nav ul {
     border-color: $santas-gray;
 }
 
-#navigation a:link,
-#navigation a:visited {
+nav a:link,
+nav a:visited {
     color           : $titan-white;
     background-color: transparent;
     border-color    : $santas-gray;
 }
 
-#navigation a:hover {
+nav a:hover {
     color           : $gun-powder;
     background-color: $porsche;
 }
 
-#navigation a:active {
+nav a:active {
     color           : $dolphin;
     background-color: $flax;
 }
 
-#navigation a.here:active,
-#navigation a.here:hover,
-#navigation a.here:link,
-#navigation a.here:visited {
+nav a.here:active,
+nav a.here:hover,
+nav a.here:link,
+nav a.here:visited {
     color           : $titan-white;
     background-color: $juniper;
 }

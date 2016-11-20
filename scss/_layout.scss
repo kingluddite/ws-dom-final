@@ -13,42 +13,42 @@ header {
     background-image   : url('../images/guitarist.gif');
     background-repeat  : no-repeat;
     background-position: bottom right;
-    border-width       : .1em;
+    border-width       : 0.1em;
     border-style       : solid;
     border-bottom-width: 0;
 }
 
-#navigation {
+nav {
     background-image   : url('../images/navbar.gif');
     background-position: bottom left;
     background-repeat  : repeat-x;
-    border-width       : .1em;
+    border-width       : 0.1em;
     border-style       : solid;
     border-bottom-width: 0;
     border-top-width   : 0;
     padding-left       : 10%;
 }
 
-#navigation ul {
+nav ul {
     width            : 100%;
     overflow         : hidden;
-    border-left-width: .1em;
+    border-left-width: 0.1em;
     border-left-style: solid;
 }
 
-#navigation li {
+nav li {
     display: inline;
 }
 
-#navigation li a {
+nav li a {
     display     : block;
     float       : left;
-    padding     : .5em 2em;
-    border-right: .1em solid;
+    padding     : 0.5em 2em;
+    border-right: 0.1em solid;
 }
 
 #content {
-    border-width    : .1em;
+    border-width    : 0.1em;
     border-style    : solid;
     border-top-width: 0;
     padding         : 2em 10%;
@@ -72,9 +72,9 @@ header {
 }
 
 #content img {
-    border-width : .1em;
+    border-width : 0.1em;
     border-style : solid;
-    outline-width: .1em;
+    outline-width: 0.1em;
     outline-style: solid;
 }
 
@@ -125,5 +125,5 @@ fieldset {
 }
 
 td {
-    padding: .5em 3em;
+    padding: 0.5em 3em;
 }
