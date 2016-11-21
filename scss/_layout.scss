@@ -1,12 +1,14 @@
 /* layout */
 
 body {
-    margin               : 1em 10%;
+    // margin               : 1em 10%;
     background-image     : url('../images/background.gif');
     background-attachment: fixed;
     background-position  : top left;
     background-repeat    : repeat-x;
-    max-width            : 80em;
+    // max-width            : 80em;
+    // susy
+    @include container(80%);
 }
 
 header {
@@ -47,7 +49,7 @@ nav li a {
     border-right: 0.1em solid;
 }
 
-#content {
+.content-container {
     border-width    : 0.1em;
     border-style    : solid;
     border-top-width: 0;
@@ -126,4 +128,8 @@ fieldset {
 
 td {
     padding: 0.5em 3em;
+}
+
+.main {
+    @include span(8 of 12);
 }

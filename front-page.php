@@ -8,9 +8,13 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <div id="content">
-    <?php if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <?php the_content(); ?>
-    <?php endwhile; endif; ?>
+  <div class="content-container">
+    <main class="main">
+      <?php if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php the_content(); ?>
+      <?php endwhile; endif; ?>
+    </main>
+    <!-- END main -->
   </div>
+  <!-- /.content-container -->
 <?php get_footer(); ?>
