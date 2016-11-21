@@ -15,3 +15,9 @@ $juniper         : #799;
 $malta           : #ba9;
 $bone            : #dcb;
 $coral-reef      : #cba;
+
+// Susy
+$susy            : ( columns: 12, gutters: 1/4, math: fluid, output: float, gutter-position: split );
+
+// $widelayout      : ( columns: 24, gutters: 1/4, math: fluid, output: float, gutter-position: split );
+// @include layout(12 (60px 10px) split static);

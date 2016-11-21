@@ -15,8 +15,8 @@ gulp.task('sass', function(){
     // Converts Sass to CSS with gulp-sass using gulp-sass
     .pipe( sourcemaps.init() )
     .pipe(sass({
-          outputStyle: 'compressed',
-          includePaths: ['node_modules/susy/sass']
+          // outputStyle: 'compressed',
+          includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets']
       }).on('error', sass.logError))
     .pipe( autoprefixer( {
       browsers: [ 'last 4 version' ]
@@ -52,6 +52,7 @@ gulp.task('fonts', function() {
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 });
+
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('scss/**/*.scss', ['sass']);

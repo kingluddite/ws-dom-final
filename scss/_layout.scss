@@ -129,7 +129,12 @@ fieldset {
 td {
     padding: 0.5em 3em;
 }
+@include breakpoint(500px) {
+    .main {
+        @include span(8);
+    }
 
-.main {
-    @include span(8 of 12);
+    .aside {
+        @include span(4 at 9);
+    }
 }
