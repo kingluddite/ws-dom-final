@@ -1,4 +1,6 @@
 var gulp = require('gulp');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
@@ -11,10 +13,15 @@ gulp.task('sass', function(){
   // **/*.scss - matches any file ending with .scss in the root folder and any child directories
   return gulp.src('scss/**/*.scss')
     // Converts Sass to CSS with gulp-sass using gulp-sass
+    .pipe( sourcemaps.init() )
     .pipe(sass({
           outputStyle: 'compressed',
           includePaths: ['node_modules/susy/sass']
       }).on('error', sass.logError))
+    .pipe( autoprefixer( {
+      browsers: [ 'last 4 version' ]
+    }))
+    .pipe(sourcemaps.write() )
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
