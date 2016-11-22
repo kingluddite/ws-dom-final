@@ -23,6 +23,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.2.0",
     "run-sequence": "^1.2.2",
-    "susy": "^2.2.12"
+    "susy": "^2.2.12",
+    "typi": "^2.3.0"
   }
 }
