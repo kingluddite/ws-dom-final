@@ -52,34 +52,9 @@ header {
     border-bottom-width: 0;
 }
 
-// nav {
-//     background-image   : url('../images/navbar.gif');
-//     background-position: bottom left;
-//     background-repeat  : repeat-x;
-//     border-width       : 0.1em;
-//     border-style       : solid;
-//     border-bottom-width: 0;
-//     border-top-width   : 0;
-//     padding-left       : 10%;
-// }
-//
-// nav ul {
-//     width            : 100%;
-//     overflow         : hidden;
-//     border-left-width: 0.1em;
-//     border-left-style: solid;
-// }
-//
-// nav li {
-//     display: inline;
-// }
-//
 nav li a {
     display   : block;
-    // float       : left;
-    // padding     : 0.5em 2em;
     padding   : vr(.5);
-    // border-right: 0.1em solid;
     text-align: center;
 }
 
@@ -87,10 +62,6 @@ nav li a {
     border-width    : 0.1em;
     border-style    : solid;
     border-top-width: 0;
-    // padding         : 2em 10%;
-    // line-height     : 1.8em;
-    // margin          : vr(1); // value 3 baselines
-    // padding         : vr(0); // value of 2 baselines
     @extend %clearfix;
 }
 
@@ -167,13 +138,9 @@ td {
     padding: 0.5em 3em;
 }
 
-// .aside {
-//     @include susy-breakpoint($xsmall, 12) {
-//         display: none;
-//     }
-// }
-
 .main {
+    padding: vr(1);
+    @include span(12);
     @include breakpoint($large) {
          @include span(8);
     }
