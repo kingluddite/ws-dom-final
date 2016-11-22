@@ -32,8 +32,6 @@ body {
 }
 @include breakpoint($desktop) {
     .header {
-        // flex-direction: row;
-
         .logo {
             align-self: flex-start;
         }
