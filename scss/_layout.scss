@@ -1,12 +1,11 @@
 /* layout */
 
 body {
-    // margin               : 1em 10%;
     background-image     : url('../images/background.gif');
     background-attachment: fixed;
     background-position  : top left;
     background-repeat    : repeat-x;
-    // max-width            : 80em;
+    max-width            : 80em;
     // susy
     @include container(80%);
 }
