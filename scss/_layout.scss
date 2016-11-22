@@ -23,7 +23,6 @@ body {
 @include breakpoint($medium) {
     .header {
         justify-content: flex-end;
-        // height         : 200px;
     }
 
     .main-nav {
