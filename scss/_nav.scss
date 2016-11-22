@@ -1,0 +1,55 @@
+nav {
+    li a {
+        display   : block;
+        padding   : vr(.5);
+        text-align: center;
+    }
+    font-family     : 'Lucida Grande','Helvetica','Arial',sans-serif;
+    color           : $gun-powder;
+    background-color: $slate-gray;
+    border-color    : $dolphin;
+
+    a {
+        text-decoration: none;
+        font-weight    : bold;
+
+        &:link,
+        &:visited {
+            color           : $titan-white;
+            background-color: transparent;
+            border-color    : $santas-gray;
+        }
+
+        &:hover {
+            color           : $gun-powder;
+            background-color: $porsche;
+        }
+
+        &:active {
+            color           : $dolphin;
+            background-color: $flax;
+        }
+
+        .here {
+            &:active,
+            &:hover,
+            &:link,
+            &:visited {
+                color           : $titan-white;
+                background-color: $juniper;
+            }
+        }
+    }
+    border-color    : $santas-gray;
+
+    .main-nav {
+        display       : flex;
+        flex-direction: column;
+        padding       : vr(.5);
+        @include breakpoint($medium) {
+            flex-direction : row;
+            justify-content: space-between;
+
+        }
+    }
+}

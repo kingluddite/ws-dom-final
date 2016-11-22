@@ -1,0 +1,47 @@
+.content-container {
+    color           : $steel-gray;
+    background-color: $almond;
+    border-color    : $dolphin;
+    border-width    : 0.1em;
+    border-style    : solid;
+    border-top-width: 0;
+    @extend %clearfix;
+
+    .main {
+        padding: vr(1);
+        @include span(12);
+        @include breakpoint($large) {
+             @include span(8);
+        }
+        @include susy-breakpoint($desktop, 24) {
+             @include span(16);
+
+            .col1,
+            .col2,
+            .col3 {
+                @include span(1 of 3);
+            }
+        }
+
+        &.full-page {
+            @include span(12);
+        }
+    }
+}
+
+.content {
+    line-height: 1.8em;
+
+    img {
+        border-color : $malta;
+        outline-color: $bone;
+        border-width : 0.1em;
+        border-style : solid;
+        outline-width: 0.1em;
+        outline-style: solid;
+    }
+
+    p {
+        margin: 1em 0;
+    }
+}

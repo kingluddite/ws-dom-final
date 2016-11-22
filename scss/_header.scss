@@ -1,0 +1,45 @@
+.page-id-10 .header {
+    background-image: url('../images/lineup.gif');
+}
+
+.page-id-14 .header {
+    background-image: url('../images/basshead.gif');
+}
+
+.page-id-20 .header {
+    background-image: url('../images/bassist.gif');
+}
+
+.page-id-16 .header {
+    background-image: url('../images/drummer.gif');
+}
+
+.header {
+    background         : none;
+    display            : flex;
+    flex-direction     : column;
+    padding            : vr(.5);
+    border-width       : 0.1em;
+    border-style       : solid;
+    border-bottom-width: 0;
+    @include breakpoint($large) {
+        background-image   : url('../images/guitarist.gif');
+        background-repeat  : no-repeat;
+        background-position: bottom right;
+    }
+    color              : $flax;
+    background-color   : $tuna;
+    border-color       : $dolphin;
+
+    .logo {
+        align-self: center;
+    }
+    @include breakpoint($medium) {
+        justify-content: flex-end;
+    }
+    @include breakpoint($desktop) {
+        .logo {
+            align-self: flex-start;
+        }
+    }
+}
