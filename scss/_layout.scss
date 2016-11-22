@@ -148,14 +148,25 @@ td {
     display: none;
     @include breakpoint($large) {
         display: block;
-        @include span(3 at 9);
+        @include span(4 at 9);
     }
 }
-@include susy-breakpoint($desktop, 24) {
-    //  @include layout(24);
 
+.gallery img {
+    display: none;
+    @include breakpoint($large) {
+        display: block;
+        @include gallery(6 of 12);
+    }
+    @include breakpoint($desktop) {
+        display: block;
+        @include gallery(3 of 12);
+    }
+
+}
+@include susy-breakpoint($desktop, 24) {
     .main {
-        @include span(21);
+        @include span(16);
 
         .col1,
         .col2,
@@ -165,8 +176,12 @@ td {
     }
 
     .aside {
-        @include span(3 at 21);
-        // @include suffix(10px);
-        // @include pull(1);
+        @include span(8 at 17);
+    }
+}
+
+.footer {
+    p {
+        text-align: center;
     }
 }
