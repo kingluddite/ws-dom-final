@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <nav>
-    <ul>
+    <ul class="main-nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="photos.html">Photos</a></li>
