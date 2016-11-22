@@ -41,13 +41,13 @@ function moveElement( elementID, final_x, final_y, interval ) {
 function prepareSlideshow() {
     if ( !document.getElementsByTagName ) return false;
     if ( !document.getElementById ) return false;
-    if ( !document.getElementById( "intro" ) ) return false;
-    var intro = document.getElementById( "intro" );
+    if ( !document.getElementById( "aside" ) ) return false;
+    var aside = document.getElementById( "aside" );
     var slideshow = document.createElement( "div" );
     slideshow.setAttribute( "id", "slideshow" );
     var frame = document.createElement( "img" );
 
-    console.log( wsd_home.template_url );
+    // console.log( wsd_home.template_url );
     frame.setAttribute( "src", wsd_home.template_url + "/images/frame.gif" );
     frame.setAttribute( "alt", "" );
     frame.setAttribute( "id", "frame" );
@@ -57,7 +57,8 @@ function prepareSlideshow() {
     preview.setAttribute( "alt", "a glimpse of what awaits you" );
     preview.setAttribute( "id", "preview" );
     slideshow.appendChild( preview );
-    insertAfter( slideshow, intro );
+    // insertAfter( slideshow, aside );
+    aside.appendChild(slideshow);
     var links = document.getElementsByTagName( "a" );
     for ( var i = 0; i < links.length; i++ ) {
         links[ i ].onmouseover = function () {
