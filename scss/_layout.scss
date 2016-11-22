@@ -11,50 +11,88 @@ body {
     @include container(80%);
 }
 
+.header,
+.main-nav {
+    display       : flex;
+    flex-direction: column;
+    padding       : vr(.5);
+}
+
+.logo {
+    align-self: center;
+}
+@include breakpoint($medium) {
+    .header {
+        justify-content: flex-end;
+        // height         : 200px;
+    }
+
+    .main-nav {
+        flex-direction : row;
+        justify-content: space-between;
+    }
+}
+@include breakpoint($desktop) {
+    .header {
+        // flex-direction: row;
+
+        .logo {
+            align-self: flex-start;
+        }
+    }
+}
+
 header {
-    background-image   : url('../images/guitarist.gif');
-    background-repeat  : no-repeat;
-    background-position: bottom right;
+    background         : none;
+    @include breakpoint($large) {
+        background-image   : url('../images/guitarist.gif');
+        background-repeat  : no-repeat;
+        background-position: bottom right;
+    }
     border-width       : 0.1em;
     border-style       : solid;
     border-bottom-width: 0;
 }
 
-nav {
-    background-image   : url('../images/navbar.gif');
-    background-position: bottom left;
-    background-repeat  : repeat-x;
-    border-width       : 0.1em;
-    border-style       : solid;
-    border-bottom-width: 0;
-    border-top-width   : 0;
-    padding-left       : 10%;
-}
-
-nav ul {
-    width            : 100%;
-    overflow         : hidden;
-    border-left-width: 0.1em;
-    border-left-style: solid;
-}
-
-nav li {
-    display: inline;
-}
-
+// nav {
+//     background-image   : url('../images/navbar.gif');
+//     background-position: bottom left;
+//     background-repeat  : repeat-x;
+//     border-width       : 0.1em;
+//     border-style       : solid;
+//     border-bottom-width: 0;
+//     border-top-width   : 0;
+//     padding-left       : 10%;
+// }
+//
+// nav ul {
+//     width            : 100%;
+//     overflow         : hidden;
+//     border-left-width: 0.1em;
+//     border-left-style: solid;
+// }
+//
+// nav li {
+//     display: inline;
+// }
+//
 nav li a {
-    display     : block;
-    float       : left;
-    padding     : 0.5em 2em;
-    border-right: 0.1em solid;
+    display   : block;
+    // float       : left;
+    // padding     : 0.5em 2em;
+    padding   : vr(.5);
+    // border-right: 0.1em solid;
+    text-align: center;
 }
 
 .content-container {
     border-width    : 0.1em;
     border-style    : solid;
     border-top-width: 0;
-    padding         : 2em 10%;
-    line-height     : 1.8em;
+    // padding         : 2em 10%;
+    // line-height     : 1.8em;
+    // margin          : vr(1); // value 3 baselines
+    // padding         : vr(0); // value of 2 baselines
     @extend %clearfix;
 }
 
