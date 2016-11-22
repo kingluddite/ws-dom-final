@@ -16,7 +16,7 @@ gulp.task('sass', function(){
     .pipe( sourcemaps.init() )
     .pipe(sass({
           // outputStyle: 'compressed',
-          includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets']
+          includePaths: ['node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets', 'node_modules/typi/scss']
       }).on('error', sass.logError))
     .pipe( autoprefixer( {
       browsers: [ 'last 4 version' ]
