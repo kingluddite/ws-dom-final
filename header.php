@@ -13,6 +13,6 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <header>
-    <img src="<?php bloginfo('template_directory'); ?>/images/logo.gif" alt="Jay Skript and the Domsters" />
+  <header class="header">
+    <img class="img-fluid logo" src="<?php bloginfo('template_directory'); ?>/images/logo.gif" alt="Jay Skript and the Domsters" />
   </header>
