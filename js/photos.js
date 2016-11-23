@@ -27,7 +27,7 @@ function preparePlaceholder() {
   if (!document.getElementById('image-gallery')) return false;
   var placeholder = document.createElement('img');
   placeholder.setAttribute('id','placeholder');
-  placeholder.setAttribute('src','images/placeholder.gif');
+  placeholder.setAttribute('src', wsd_photos.template_url + '/images/placeholder.gif');
   placeholder.setAttribute('alt','my image gallery');
   var description = document.createElement('p');
   description.setAttribute('id','description');
