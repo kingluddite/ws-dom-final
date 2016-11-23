@@ -11,9 +11,15 @@
 
 }
 
-#imagegallery li {
-    display        : inline;
-    list-style-type: none;
+#image-gallery {
+    li {
+        display        : inline;
+        list-style-type: none;
+    }
+
+    a {
+        background-color: transparent;
+    }
 }
 
 #slideshow {
@@ -36,8 +42,4 @@ img#preview {
     position     : absolute;
     border-width : 0;
     outline-width: 0;
-}
-
-#imagegallery a {
-    background-color: transparent;
 }

@@ -1,8 +1,10 @@
 .aside {
     display: none;
     @include breakpoint($large) {
-        display: block;
+        display   : block;
         @include span(4 at 9);
+        padding   : 1em;
+        margin-top: 1em;
     }
     @include susy-breakpoint($desktop, 24) {
         .aside {

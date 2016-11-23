@@ -32,6 +32,10 @@ h3 {
     @include typi($h3-font-map);
 }
 
+table {
+    @include typi($table-font-map);
+}
+
 /* override normalize 40px */
 menu,
 ol,
@@ -75,16 +79,7 @@ a:active {
     height   : auto;
 }
 
-dl {
-    overflow: hidden;
-}
-
 dt {
     float       : left;
     margin-right: 1em;
-}
-
-dd {
-    float : left;
-    margin: 0;
 }

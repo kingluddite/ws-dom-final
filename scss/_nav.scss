@@ -9,6 +9,12 @@ nav {
     background-color: $slate-gray;
     border-color    : $dolphin;
 
+    li.current-menu-item a {
+        color           : $titan-white;
+        background-color: $juniper;
+        padding         : vr(.5);
+    }
+
     a {
         text-decoration: none;
         font-weight    : bold;
@@ -28,16 +34,6 @@ nav {
         &:active {
             color           : $dolphin;
             background-color: $flax;
-        }
-
-        .here {
-            &:active,
-            &:hover,
-            &:link,
-            &:visited {
-                color           : $titan-white;
-                background-color: $juniper;
-            }
         }
     }
     border-color    : $santas-gray;

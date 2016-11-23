@@ -26,6 +26,10 @@
         &.full-page {
             @include span(12);
         }
+
+        &.two-column {
+            @include span(8 of 12);
+        }
     }
 }
 
