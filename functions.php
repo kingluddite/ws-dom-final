@@ -16,10 +16,14 @@ function theme_js() {
     $wsd_home = array( 'template_url' => get_bloginfo('template_url') );
     wp_localize_script( 'home_js', 'wsd_home', $wsd_home );
     wp_enqueue_script( 'about_js', get_template_directory_uri() . '/js/about.js', '', '', true );
+    wp_enqueue_script( 'photos_js', get_template_directory_uri() . '/js/photos.js', '', '', true );
+    wp_enqueue_script( 'live_js', get_template_directory_uri() . '/js/live.js', '', '', true );
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );
 
-// Widgets
+/*==========================================
+=            Widgets            =
+==========================================*/
 function create_widget($name, $id, $description) {
     register_sidebar(array(
       'name' => __( $name ),
