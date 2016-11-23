@@ -1,14 +1,17 @@
 <?php
 
-
-/* add css */
+/*==========================================
+=            CSS            =
+==========================================*/
 function theme_styles() {
     wp_enqueue_style( 'custom_css', get_template_directory_uri() . '/css/style.css' );
     wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
-/* add JavaScript */
+/*==========================================
+=            JavaScript            =
+==========================================*/
 function theme_js() {
     wp_enqueue_script( 'global_js', get_template_directory_uri() . '/js/global.js', '','', true );
     // add condition to only pull home.js on home page
@@ -31,12 +34,37 @@ function create_widget($name, $id, $description) {
       'description' => __( $description ),
       'before_widget' => '',
       'after_widget' => '',
-      'before_title' => '',
-      'after_title' => ''
+      'before_title' => '<h3>',
+      'after_title' => '</h3>'
     ));
 }
 
+// widget instances
+
+// front-page
 create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the hompage');
 create_widget( 'Front Page Center', 'front-center', 'Displays on the center of the hompage');
 create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the hompage');
+
+// two-column template
+create_widget( 'Page Sidebar', 'page', 'Displays on side of pages with sidebar');
+
+// blog sidebar widget
+create_widget( 'Blog Sidebar', 'blog', 'Displays on side of pages in blog section');
+
+/*=============================
+=            Menus            =
+=============================*/
+add_theme_support( 'menus' );
+
+function domsters_register_menu() {
+  register_nav_menu('main-menu', __( 'Main Menu') );
+}
+
+add_action('init', 'domsters_register_menu');
+
+/*==========================================
+=            Add Featured Image            =
+==========================================*/
+add_theme_support( 'post-thumbnails');
 ?>
