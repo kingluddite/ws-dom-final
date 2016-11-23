@@ -24,7 +24,7 @@ function addClass( element, value ) {
         element.className = value;
     } else {
         newClassName = element.className;
-        newClassName += " ";
+        newClassName += ' ';
         newClassName += value;
         element.className = newClassName;
     }
@@ -33,16 +33,16 @@ function addClass( element, value ) {
 function highlightPage() {
     if ( !document.getElementsByTagName ) return false;
     if ( !document.getElementById ) return false;
-    if ( !document.getElementById( "navigation" ) ) return false;
-    var nav = document.getElementById( "navigation" );
-    var links = nav.getElementsByTagName( "a" );
+    if ( !document.getElementById( 'navigation' ) ) return false;
+    var nav = document.getElementById( 'navigation' );
+    var links = nav.getElementsByTagName( 'a' );
     for ( var i = 0; i < links.length; i++ ) {
-        var linkurl = links[ i ].getAttribute( "href" );
+        var linkurl = links[ i ].getAttribute( 'href' );
         var currenturl = window.location.href;
         if ( currenturl.indexOf( linkurl ) != -1 ) {
-            links[ i ].className = "here";
+            links[ i ].className = 'here';
             var linktext = links[ i ].lastChild.nodeValue.toLowerCase();
-            document.body.setAttribute( "id", linktext );
+            document.body.setAttribute( 'id', linktext );
         }
     }
 }
