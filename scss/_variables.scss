@@ -3,12 +3,19 @@
 // Susy
 $susy            : ( columns: 12, gutters: 1/4, math: fluid, output: float, gutter-position: split );
 
+// breakpoints
+$xsmall          : 400px;
+$small           : 550px;
+$medium          : 769px;
+$large           : 960px;
+$desktop         : 1200px;
+
 // breakpoint
 $breakpoints     : ( small: 600px, large: 1200px );
 $typi            : ( null:(16px, 1.4), small: 18px, large: 20px);
 
 $h1-font-map     : ( null: (2em, 1.2), small: (2em, 1.1) );
-$h2-font-map     : ( null: (1.5em, 1), small: (2em, 1.1) );
+$h2-font-map     : ( null: (1.5em, 1), small: (1.7em, 1.1) );
 $h3-font-map     : ( null: (1em, 0.8), small: (1.5em, 1.0) );
 $table-font-map  : ( null: (.6em, 1.4), small: (.8em, 1.0) );
 
@@ -29,13 +36,6 @@ $juniper         : #799;
 $malta           : #ba9;
 $bone            : #dcb;
 $coral-reef      : #cba;
-
-// breakpoints
-$xsmall          : 400px;
-$small           : 550px;
-$medium          : 769px;
-$large           : 960px;
-$desktop         : 1200px;
 
 // $widelayout      : ( columns: 24, gutters: 1/4, math: fluid, output: float, gutter-position: split );
 // @include layout(12 (60px 10px) split static);

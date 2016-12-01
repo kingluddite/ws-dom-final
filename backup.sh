@@ -5,9 +5,9 @@
 set -e
 
 ###### set your variables
-BLOGDIR="/users/philiphowley/sites/ws-dom-final" ## location of blog on server
-BUDIR="/users/philiphowley/blogbu" ## location of backups on server
-DBNAME='ws_dom_final' ## name of your blog's database
+BLOGDIR="/users/phowley/sites/ws-dom-practice" ## location of blog on server
+BUDIR="/users/phowley/blogbu" ## location of backups on server
+DBNAME='ws_dom_practice' ## name of your blog's database
 DBUSER='root' ## database username
 DBPW='root' ## database password
 ### cron is funky about its PATH, so add paths to all commands here:
@@ -30,7 +30,7 @@ echo "Done with db backup"
 
 ### Backup files into BUDIR
 echo "Creating wp file backup..."
-tar -czf $BUDIR/wpfiles-$datetime.tar.gz $BLOGDIR 
+tar -czf $BUDIR/wpfiles-$datetime.tar.gz $BLOGDIR
 echo "Done with wp file backup"
 
 ### Delete backups over three days old (adjust depending on need/space)

@@ -21,7 +21,7 @@ body {
 /* headings */
 h1 {
     @include typi($h1-font-map);
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h2 {

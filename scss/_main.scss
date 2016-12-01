@@ -2,7 +2,7 @@
     color           : $steel-gray;
     background-color: $almond;
     border-color    : $dolphin;
-    border-width    : 0.1em;
+    border-width    : .1em;
     border-style    : solid;
     border-top-width: 0;
     @extend %clearfix;
@@ -39,9 +39,9 @@
     img {
         border-color : $malta;
         outline-color: $bone;
-        border-width : 0.1em;
+        border-width : .1em;
         border-style : solid;
-        outline-width: 0.1em;
+        outline-width: .1em;
         outline-style: solid;
     }
 
